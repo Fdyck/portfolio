@@ -1,0 +1,78 @@
+.myProcess__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.myProcess__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+
+    &__title {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+            min-width: 50px;
+            min-height: 20px;
+            max-height: 40px;
+            margin: 1rem;
+        }
+
+        &--reverse {
+
+            img {
+                margin: 0 0 0 2rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        &--01 {
+            color: $mainColor;
+            // margin-right: 2rem;
+        }
+
+        &--02 {
+            color: $secondaryColor;
+        }
+
+        &--03 {
+            color: $lightAccentColor;
+        }
+
+        &--04 {
+            color: $accentColor;
+        }
+
+        &--05 {
+            color: $darkAccentColor;
+        }
+    }
+
+    p {
+       width: 30%;
+       text-align: left; 
+       margin: 0;
+    }
+
+    &__img {
+        padding-right: 16.5px;
+        max-width: 30%;
+    }
+
+    &__evenImg {
+        padding-left: 16.5px;
+    }
+}

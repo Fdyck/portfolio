@@ -1,3 +1,103 @@
+//COLOR VARIABLES
+$mainColor: #f70135;
+// #E45136 AS MAIN FOR MORE BOLD BUT DOESNT MATCH TARGET
+$secondaryColor: #ffce45;
+$darkColor: #2c3e50;
+$accentColor: #098ce5;
+$lightAccentColor: #01B44F;
+$darkAccentColor: #9a22cd;
+$fontColor: #FFF;
+
+$headingFont: 'Montserrat', sans-serif;
+$pFont: 'Open Sans', sans-serif;
+
+//MIXINS
+
 html {
     font-size: 62.5%;
+    font-family: $headingFont;
+    color: $fontColor;
 }
+
+body {
+    font-size: 1.6rem;
+    background: $darkColor;
+}
+
+.headerWrapper {
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.wrapper {
+    max-width: 1100px;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+p {
+    // LIGHTEN THIS MORE? FIND ANOTHER FONT THAT CAN?
+    font-family: $pFont;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 2rem auto 0 auto;
+}
+
+button {
+    margin: 2rem auto;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    color: $fontColor;
+    transition: background-color 0.4s ease-in;
+}
+
+.section__title {
+    font-size: 2.2rem;
+    padding-bottom: 5rem;
+
+    & h2 {
+        text-transform: uppercase;
+    }
+}
+
+.mainColor {
+    color: $mainColor;
+}
+
+.secondaryColor {
+    color: $secondaryColor;
+}
+
+
+

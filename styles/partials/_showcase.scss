@@ -1,0 +1,136 @@
+.showcase {
+    position: relative;
+    padding-bottom: 0;
+
+    .rocket {
+        // transform: scale(0.75);
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    
+    .track {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .trackArrow {
+        margin: 0 auto;
+    }
+
+    .section__title p {
+        width: 60%;
+    }
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        // margin-top: 10rem;
+
+        &--first {
+            margin-top: 0;
+        }
+
+        &__content {
+            width: 45%;
+            text-align: left;
+            margin-right: 5%;
+
+            a:hover button {
+                background-color: $mainColor;
+                transition: background-color 0.8s ease-out;
+            }
+
+            .gitButton {
+                background-color: $darkAccentColor;
+                float: right;
+            }
+
+            .oButton {
+                background-color: $secondaryColor;
+            }
+
+            .bButton {
+                background-color: $accentColor;
+            }
+
+            .gButton {
+                background-color: #22c48a;
+            }
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 2rem;
+            }
+
+            &__icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                margin-top: 2rem;
+
+                img {
+                    min-width: 30px;
+                    width: 8%;
+                    margin: 1rem;
+                }
+            }
+        }
+    
+        &__img {
+            width: 50%;
+            position: relative;
+
+            
+            .loop {
+                width: 70%;
+                margin-left: 30%;
+                min-width: 250px;
+            }
+
+            .project {
+                width: 60%;
+                min-width: 220px;
+                border-radius: 50%;
+                position: absolute;
+                left: 35%;
+                top: 6.5%;
+
+                &--reverse {
+                    left: 5%;
+                }
+            }
+
+            .projectMobile {
+                position: absolute;
+                width: 30%;
+                min-width: 100px;
+                border: solid 7px $fontColor;
+                border-radius: 50%;
+                left: 17%;
+                top: 30%;
+
+                &--reverse {
+                    left: 53%;
+                }
+            }
+        }
+
+        &--reverse {
+            flex-direction: row-reverse;
+
+            .showcase__item__content {
+                margin-right: 0;
+                margin-left: 5%;
+            }
+            
+
+            .loop {
+                margin-left: 0;
+                margin-right: 30%;
+            }
+        }
+    }
+}
+
+

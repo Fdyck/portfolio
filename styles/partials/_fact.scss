@@ -1,0 +1,60 @@
+.fact {
+    background: $secondaryColor;
+
+    .section__title p {
+        color: $darkColor;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__item {
+        width: 20%;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+
+        &--main {
+            background: $mainColor;
+        }
+
+        &--dark {
+            background: $darkColor;
+        }
+
+        &--lightAccent {
+            background: $lightAccentColor;
+        }
+
+        &--accent {
+            background: $accentColor;
+        }
+
+        &--darkAccent {
+            background: $darkAccentColor;
+        }
+
+        &__content {
+
+            h3 {
+                margin-top: 25%;
+                font-size: 3.5rem;
+            }
+
+            p {
+                margin: 1rem 3rem 0 3rem;
+            }
+        }
+
+        &__img {
+            margin: 25% auto;
+            // height: 50%;
+            max-width: 90px;
+    
+            &--tweak {
+                margin: 15% auto 25% auto;
+            }
+        }
+    }
+}

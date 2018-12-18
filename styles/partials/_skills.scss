@@ -1,0 +1,44 @@
+.skills {
+    background: $darkColor;
+
+    &__title {
+        text-transform: none;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    
+        &__item{
+            width: 15%;
+            // margin: 0 auto;
+    
+            & img {
+                width: 100%;
+                transform: scale(0.5);
+            }
+    
+            &--content {
+    
+                & h3 {
+                    text-transform: Capitalize;
+                }
+            }
+    
+            &--secondary {
+    
+                & img {
+                    transform: scale(0.6);
+                }
+            }
+    
+            &--focus {
+    
+                & img {
+                    transform: scale(0.75);
+                }
+            }
+        }
+    }
+}
+
