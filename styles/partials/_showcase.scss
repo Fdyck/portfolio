@@ -27,6 +27,11 @@
         align-items: center;
         // margin-top: 10rem;
 
+        &:hover .loop {
+                animation: rotate 10s linear infinite;
+                animation-delay: 0;
+            }
+
         &--first {
             margin-top: 0;
         }
@@ -43,7 +48,7 @@
 
             .gitButton {
                 background-color: $darkAccentColor;
-                float: right;
+                margin-left: 1rem;
             }
 
             .oButton {
@@ -81,12 +86,13 @@
         &__img {
             width: 50%;
             position: relative;
-
             
             .loop {
                 width: 70%;
                 margin-left: 30%;
                 min-width: 250px;
+                z-index: 2;
+                
             }
 
             .project {
@@ -106,10 +112,15 @@
                 position: absolute;
                 width: 30%;
                 min-width: 100px;
-                border: solid 7px $fontColor;
+                border: solid 7px $secondaryColor;
                 border-radius: 50%;
                 left: 17%;
                 top: 30%;
+                z-index: 3;
+
+                &--o {
+                    border: solid 7px $secondaryColor;
+                }
 
                 &--reverse {
                     left: 53%;
@@ -134,4 +145,17 @@
     }
 }
 
+@keyframes spin {
+    0% {transform: rotate(72deg)};
+    25% {transform: rotate(144deg)};
+    50% {transform: rotate(216deg)};
+    75% {transform: rotate(288deg)};
+    100% {transform: rotate(360deg)};
+}
+
+@keyframes rotate {
+    from {transfrom: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    
+}
 
