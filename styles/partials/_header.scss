@@ -95,7 +95,8 @@ header {
         width: 3rem;
         text-transform: uppercase;
         right: calc(50% - 1.5rem);
-        bottom: 5%;        
+        bottom: 3%;    
+        animation: bounce 2s infinite linear;    
 
         &--arrow {
              width: 0; 
@@ -107,4 +108,14 @@ header {
              margin-top: 0.5rem;
         }
     }
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    20% {transform: translateY(0);}
+	40% {transform: translateY(20px);}
+    50% {transform: translateY(0);}
+	60% {transform: translateY(10px);}
+    80% {transform: translateY(0);}
+    100% {transform: translateY(0);}
 }
