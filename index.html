@@ -15,8 +15,17 @@
 
     <header>
         <div class="headerSplit"></div>
-        <!-- <div class="headerSplit headerSplit--left"></div>
-        <div class="headerSplit headerSplit--right"></div> -->
+        <a href="javascript:void(0)" class="open" onclick="openNav()">&#9776;</a>
+        <div id="hamburger" class="hamburgerNav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <ul class="mobileNav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
         <nav class="headerNav wrapper">
             <ul class="headerNav__menu">
                 <li class="headerNav__menu__item"><a href="#facts">Facts</a></li>
@@ -33,7 +42,6 @@
         </nav>
         <div class="headerContent headerWrapper" id="start">
             <div class="headerContent headerContent__text">
-                <!-- CHANGE THESE? -->
                 <div class="headerContent__text__items">
                     <h2>Collaboration.</h2>
                     <h2>Curiousity.</h2>
@@ -45,7 +53,6 @@
                 <img src="styles/assets/headerProfile.png" alt="Outline of man with backpack and phone.">
             </div>
             <div>
-                <!-- ENTER A SMOOTH SCROLL TO THIS BUTTON -->
                 <a class="headerContent__prompt" href="#skills">
                     <h3>Go</h3>
                     <span class="headerContent__prompt--arrow"></span>
@@ -55,11 +62,9 @@
     </header>
     <section class="skills" id="skills">
         <div class="wrapper">
-            <!-- DO I WANT TO REPLACE WITH THE BULLSEYE? -->
             <h2 class="section__title skills__title">I am a young professional with a <span class="secondaryColor">passion for coding,</span> variety of experience, high social intelligence, and a ceaseless imagination.</h2>
             <div class="skills__list">
-            <!-- Re-Write These! -->
-                <li class="skills__list__item">
+                <li class="skills__list__item skills__list__item--third">
                     <img src="styles/assets/icons/graph.png" alt="Graphic of graph">
                     <div class="skills__list__item--content">
                         <h3>Marketing</h3>
@@ -75,7 +80,7 @@
                 </li>
                 <li class="skills__list__item skills__list__item--focus">
                     <img src="styles/assets/icons/diamond.png" alt="Graphic of a diamond">
-                    <div class="skills__list__item--content">
+                    <div class="skills__list__item--content skills__list__item--main">
                         <h3>Coding</h3>
                         <p>Practical knowledge of, and experience using, HTML, CSS, SASS, JS, , and React.</p>
                     </div>
@@ -84,10 +89,10 @@
                     <img src="styles/assets/icons/joypad.png" alt="Graphic of speak bubbles">
                     <div class="skills__list__item--content">
                         <h3>Team player</h3>
-                        <p>Thrives in fast paced situations. Leadership and support experience with consistant/quality results.</p>
+                        <p>Thrives in fast paced situations. Leadership and support experience delivering consistant, quality results.</p>
                     </div>
                 </li>
-                <li class="skills__list__item">
+                <li class="skills__list__item skills__list__item--third">
                     <img src="styles/assets/icons/keyboards.png" alt="Graphic of a man">
                     <div class="skills__list__item--content">
                         <h3>Personal</h3>
@@ -114,7 +119,6 @@
                     <div class="showcase__item__content__icons">
                         <img class="devIcon" src="styles/assets/devIcons/html5/html5-original.svg" alt="html5 icon" title="HTML5">
                         <img class="devIcon" src="styles/assets/devIcons/css3/css3-original.svg" alt="css icon" title="CSS">
-                        <!-- <img class="devIcon" src="styles/assets/devIcons/visualstudio/visualstudio-plain.svg" alt="VS Code icon"> -->
                         <img class="devIcon" src="styles/assets/devIcons/icons8-github-50.png" alt="github icon" title="Github">
                         <img class="devIcon" src="styles/assets/devIcons/javascript/javascript-original.svg" alt="JavaScript icon" title="JavaScript">
                         <img class="devIcon" src="styles/assets/devIcons/responsive.png" alt="responsive design" title="Responsive Design">
@@ -124,8 +128,10 @@
                 </div>
                 <div class="showcase__item__img">
                     <img class="loop" src="styles/assets/oLoop.png" alt="">
-                    <img class="project" src="styles/assets/summit.PNG" alt="A screenshot of the website on desktop">
-                    <img class="projectMobile projectMobile--o" src="styles/assets/summitMobile.PNG" alt="A screenshot of the site on mobile">
+                    <a target="_blank" href="https://fdyck.github.io/foster_dyck_project1/">
+                        <img class="project" src="styles/assets/summit.PNG" alt="A screenshot of the website on desktop">
+                        <img class="projectMobile projectMobile--o" src="styles/assets/summitMobile.PNG" alt="A screenshot of the site on mobile">
+                    </a>
                 </div>
             </div>
             <img class="track trackRightToLeft" src="styles/assets/trackRightToLeft.png" alt="Track for the rocket ship">
@@ -138,7 +144,6 @@
                     <div class="showcase__item__content__icons">
                         <img class="devIcon" src="styles/assets/devIcons/html5/html5-original.svg" alt="html5 icon" title="HTML5">
                         <img class="devIcon" src="styles/assets/devIcons/sass/sass-original.svg" alt="Sass icon" title="SASS">
-                        <!-- <img class="devIcon" src="styles/assets/devIcons/visualstudio/visualstudio-plain.svg" alt="VS Code icon"> -->
                         <img class="devIcon" src="styles/assets/devIcons/icons8-github-50.png" alt="github icon" title="Github">
                         <img class="devIcon" src="styles/assets/devIcons/jquery/jquery-original.svg" alt="jQuery icon" title="jQuery">
                         <img class="devIcon" src="styles/assets/devIcons/responsive.png" alt="responsive design" title="Responsive Design">
@@ -148,8 +153,10 @@
                 </div>
                 <div class="showcase__item__img">
                     <img class="loop" src="styles/assets/bLoop.png" alt="">
-                    <img class="project project--reverse" src="styles/assets/solarScientist.PNG" alt="A screenshot of the website on desktop">
-                    <img class="projectMobile projectMobile--reverse" src="styles/assets/solarScientistMobile.PNG" alt="A screenshot of the site on mobile">
+                    <a target="_blank" href="https://fdyck.github.io/foster_dyck_project3/">
+                        <img class="project project--reverse" src="styles/assets/solarScientist.PNG" alt="A screenshot of the website on desktop">
+                        <img class="projectMobile projectMobile--reverse" src="styles/assets/solarScientistMobile.PNG" alt="A screenshot of the site on mobile">
+                    </a>
                 </div>
             </div>
             <img class="track trackLeftToRight" src="styles/assets/trackLeftToRight.png" alt="Track for the rocket ship">
@@ -162,7 +169,6 @@
                     <div class="showcase__item__content__icons">
                         <img class="devIcon" src="styles/assets/devIcons/html5/html5-original.svg" alt="html5 icon" title="HTML5">
                         <img class="devIcon" src="styles/assets/devIcons/sass/sass-original.svg" alt="Sass icon" title="SASS">
-                        <!-- <img class="devIcon" src="styles/assets/devIcons/visualstudio/visualstudio-plain.svg" alt="VS Code icon"> -->
                         <img class="devIcon" src="styles/assets/devIcons/icons8-github-50.png" alt="github icon" title="Github">
                         <img class="devIcon" src="styles/assets/devIcons/npm/npm-original-wordmark.svg" alt="npm icon" title="Node Package Manager">
                         <img class="devIcon" src="styles/assets/devIcons/icons8-google-scholar-50.png" alt="react icon" title="React">
@@ -175,8 +181,10 @@
                 </div>
                 <div class="showcase__item__img">
                     <img class="loop" src="styles/assets/gLoop.png" alt="">
-                    <img class="project" src="styles/assets/checkYourself.PNG" alt="A screenshot of the website on desktop">
-                    <img class="projectMobile" src="styles/assets/checkYourselfMobile.PNG" alt="A screenshot of the site on mobile">
+                    <a target="_blank" href="https://foster-dyck-project5.firebaseapp.com/">
+                        <img class="project" src="styles/assets/checkYourself.PNG" alt="A screenshot of the website on desktop">
+                        <img class="projectMobile" src="styles/assets/checkYourselfMobile.PNG" alt="A screenshot of the site on mobile">
+                    </a>
                 </div>
             </div>
             <img class="track trackRightToLeft" src="styles/assets/trackRightToLeft.png" alt="Track for the rocket ship">
@@ -189,7 +197,6 @@
                     <div class="showcase__item__content__icons">
                         <img class="devIcon" src="styles/assets/devIcons/html5/html5-original.svg" alt="html5 icon" title="HTML5">
                         <img class="devIcon" src="styles/assets/devIcons/sass/sass-original.svg" alt="Sass icon" title="SASS">
-                        <!-- <img class="devIcon" src="styles/assets/devIcons/visualstudio/visualstudio-plain.svg" alt="VS Code icon"> -->
                         <img class="devIcon" src="styles/assets/devIcons/slack/slack-original.svg" alt="Slack icon" title="Slack">
                         <img class="devIcon" src="styles/assets/devIcons/pairProgramming.png" alt="pair programming icon" title="Pair Programming">
                         <img class="devIcon" src="styles/assets/devIcons/icons8-github-50.png" alt="github icon" title="Github">
@@ -203,8 +210,10 @@
                 </div>
                 <div class="showcase__item__img">
                     <img class="loop" src="styles/assets/oLoop.png" alt="">
-                    <img class="project project--reverse" src="styles/assets/dialectDitty.PNG" alt="A screenshot of the website on desktop">
-                    <img class="projectMobile projectMobile--reverse" src="styles/assets/dialectDittyMobile.PNG" alt="A screenshot of the site on mobile">
+                    <a target="_blank" href="https://fyling.github.io/project_4_kyle_foster/">
+                        <img class="project project--reverse" src="styles/assets/dialectDitty.PNG" alt="A screenshot of the website on desktop">
+                        <img class="projectMobile projectMobile--reverse" src="styles/assets/dialectDittyMobile.PNG" alt="A screenshot of the site on mobile">
+                    </a>
                 </div>
             </div>
             <img class="track trackEnd" src="styles/assets/trackEnd.png" alt="Track for the rocket ship">
@@ -218,13 +227,13 @@
                 <p>No matter how complex the site or app, it can be broken down into five simple steps.</p>
             </div>
             <div class="myProcess__container">
-                <div class="myProcess__item">
+                <div class="myProcess__item myProcess__item--top">
                     <div class="myProcess__item__title">
                         <img src="styles/assets/01.png" alt="01">
                         <h3 class="myProcess__item__title--01">Wireframing</h3>
                     </div>
                     <img class="myProcess__item__img" src="styles/assets/wireframe.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam saepe, iusto autem dolore corporis quo facere corrupti itaque quos!</p>
+                    <p>Wireframing allows me see what the needs of the project are and how to best layout the page to showcase them. I find the primary focus of the site and gather feedback at an early stage.</p>
                 </div>
                 <div class="myProcess__item myProcess__item--reverse">
                     <div class="myProcess__item__title myProcess__item__title--reverse">
@@ -232,15 +241,15 @@
                         <img src="styles/assets/02.png" alt="02">
                     </div>
                     <img class="myProcess__item__evenImg" src="styles/assets/designing.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam saepe, iusto autem dolore corporis quo facere corrupti itaque quos!</p>
+                    <p>If not given a design already, I lay out how each section will look/interact and add to the whole. This allows me to provide a consistant feel throughout.</p>
                 </div>
                 <div class="myProcess__item">
-                    <div class="myProcess__item__title myProcess__item__title">
+                    <div class="myProcess__item__title">
                         <img src="styles/assets/03.png" alt="03">
                         <h3 class="myProcess__item__title--03">Developing</h3>
                     </div>
                     <img class="myProcess__item__img" src="styles/assets/coding.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam saepe, iusto autem dolore corporis quo facere corrupti itaque quos!</p>
+                    <p>Where the magic happens. I get my hands dirty and create the page based on the wireframe and designs I have already. Effective both alone and as a part of a team.</p>
                 </div>
                 <div class="myProcess__item myProcess__item--reverse">
                     <div class="myProcess__item__title myProcess__item__title--reverse">
@@ -248,15 +257,15 @@
                         <img src="styles/assets/04.png" alt="04">
                     </div>
                     <img class="myProcess__item__evenImg" src="styles/assets/testing.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam saepe, iusto autem dolore corporis quo facere corrupti itaque quos!</p>
+                    <p>Often the most overlooked aspect of creating a web page. I will test for accessibility, responsive design, cross-browser compatability, etc. This ensures a consistant and flawless experience.</p>
                 </div>
                 <div class="myProcess__item">
-                    <div class="myProcess__item__title myProcess__item__title">
+                    <div class="myProcess__item__title">
                         <img src="styles/assets/05.png" alt="05">
                         <h3 class="myProcess__item__title--05">Hosting</h3>
                     </div>
                     <img class="myProcess__item__img" src="styles/assets/hosting.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam magnam saepe, iusto autem dolore corporis quo facere corrupti itaque quos!</p>
+                    <p>The last step that continues indefinetly. Once the page is live, I will monitor usage and ensure it remains up to date.</p>
                 </div>
             </div>
         </div>
@@ -268,38 +277,38 @@
                 <p>Peek into a recent month of my life.</p>
             </div>
             <div class="fact__container">
-                <div class="fact__item fact__item--main">
+                <div class="fact__item fact__item--main fact__item--end fact__item--left">
                     <div class="fact__item__content">
                         <h3>92</h3>
                         <p>Cups of coffee</p>
                     </div>
                     <img class="fact__item__img" src="styles/assets/coffee.png" alt="">
                 </div> 
-                <div class="fact__item fact__item--dark">
+                <div class="fact__item fact__item--dark fact__item--left">
                     <div class="fact__item__content">
-                        <h3>108</h3>
+                        <h3>142</h3>
                         <p>Hours writing code</p>
                     </div>
                     <img class="fact__item__img" src="styles/assets/mac.png" alt="">
                 </div>
-                <div class="fact__item fact__item--lightAccent">
+                <div class="fact__item fact__item--focus fact__item--lightAccent">
                     <div class="fact__item__content">
                         <h3>3</h3>
                         <p>Sites launched</p>
                     </div>
                     <img class="fact__item__img" src="styles/assets/trophy.png" alt="">
                 </div>
-                <div class="fact__item fact__item--accent">
+                <div class="fact__item fact__item--accent fact__item--right">
                     <div class="fact__item__content">
                         <h3>62</h3>
                         <p>Transit trips</p>
                     </div>
                     <img class="fact__item__img" src="styles/assets/transit.png" alt="">
                 </div>
-                <div class="fact__item fact__item--darkAccent">
+                <div class="fact__item fact__item--darkAccent fact__item--end fact__item--right">
                     <div class="fact__item__content">
                         <h3>5</h3>
-                        <p>Overly competitive board games</p>
+                        <p>Merciless board games</p>
                     </div>
                     <img class="fact__item__img fact__item__img--tweak" src="styles/assets/boardGame.png" alt="">
                 </div>
@@ -404,29 +413,18 @@
             <h2>&copy 2018 <span class="darkColor">Foster Dyck</span></h2>
         </div>
     </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("hamburger").style.width = "60%";
+        }
+
+        function closeNav() {
+            document.getElementById("hamburger").style.width = "0%";
+        }
+    </script>
 </body>
 </html>
 
-<!-- COLOR CHANGER OPTION?  -->
-<!-- ANIMATE SPACESHIP? CIRCLES ROTATE WHEN ACTIVE -->
-<!-- MENU TURNS INTO LOGO/HAMBURGER ON SCROLL -->
-<!-- TIDY THE SILLOUTE, GET NEW SILLOUTE? FLYING ANIMATION, DIV OVER TOP WITH THAT COLOR CHANGE EM SHOWED? -->
 
-<!-- CHANGE SPACING TO % NOT REM? -->
-<!-- MAKE FONT SIZES LARGER? -->
-<!-- SUMMIT FOR SOPHIE -->
-<!-- SWITCH TARGET ICON?  -->
-<!-- MAKE A LEGEND OF THE SKILLS IN THE PORTFOLIO PEICES, MAKE SURE FIREBASE IS THERE AS WELL AS DESIGN -->
-<!-- ADD DESIGN SKILL ICON? -->
-<!-- CLASSNAMES FOR ALL THE P AND H3 I DID NOT HAVE TIME FOR -->
- <!-- PUT IN CV BUTTON (HIRE ME BUTTON?) (in header or nav?)-->
- <!-- ADD IN IMAGE OF TORONTO INSTEAD OF MAP -->
- <!-- MOBILE RESPONSIVE -->
- <!-- MENU ON SCROLL AND RESIZE -->
-<!-- REFERENCES -->
-<!-- SMOOTH SCROLL -->
-<!-- CREATE ALL THE ANIMATIONS SAY THAT! ADD IN SOME FUN MOVEMENT -->
-<!-- CHANGE THE 'My Process' TITLES -->
-<!-- P LINE HEIGHT -->
-<!-- CHANGE NAMES OF PROJECT TABS AND FIX THEM UP -->
 

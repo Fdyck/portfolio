@@ -3,7 +3,6 @@
     padding-bottom: 0;
 
     .rocket {
-        // transform: scale(0.75);
         margin: 0 auto;
         padding-bottom: 1rem;
     }
@@ -25,12 +24,11 @@
     &__item {
         display: flex;
         align-items: center;
-        // margin-top: 10rem;
 
         &:hover .loop {
-                animation: rotate 10s linear infinite;
-                animation-delay: 0;
-            }
+            animation: rotate 10s linear infinite;
+            animation-delay: 0;
+        }
 
         &--first {
             margin-top: 0;

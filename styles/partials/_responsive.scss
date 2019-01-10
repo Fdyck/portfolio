@@ -1,0 +1,364 @@
+@media (max-width: 1050px) {
+   
+    .headerContent {
+
+        &__img {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: right;
+
+            & img {
+                height: 80%;
+                text-align: right;
+                // width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    .headerContent {
+        position: relative;
+        
+        &__img {
+
+            & img {
+                position: absolute;
+                right: -15%;
+            }
+        }
+    }
+
+    .projectMobile {
+        display: none;
+    }
+
+    .skills {
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &__item {
+                width: 25%;
+                margin: 0 10% 5% 10%;
+
+                &--focus {
+                    order: 1;
+                    margin: 0 10%;
+                }
+
+                &--third {
+                    order: -1;
+                }
+            }
+        }        
+    }
+
+    .myProcess__item {
+        margin-top: 5%;
+
+        &--top {
+            margin-top: 0%;
+        }
+
+        &__title {
+
+            & img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 775px) {
+     
+    .headerContent {
+        
+        &__img {
+            display: none;
+        }
+    }
+
+    .skills {
+
+        &__list__item {
+            margin: 0 5% 5% 5%;
+            width: 40%;
+        }
+    }
+
+    .myProcess__item {
+        margin-top: 15%;
+
+        &--top {
+            margin-top: 0%;
+        }
+    }
+
+    .fact__container {
+        flex-wrap: wrap;
+
+        .fact__item {
+            width: 30%;
+    
+            &--focus {
+                width: 60%;
+                margin: 0 20%;
+                order: -1;
+            }
+
+            &--left{
+                margin: 0 0 0 20%;
+            }
+
+            &--right {
+                margin: 0 20% 0 0;
+            }
+
+            &--end {
+                order: 1;
+            }
+        }
+    }
+
+    .social {
+
+        &__links{
+            margin: 5rem 5%;
+            width: 10%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        width: 80%;
+    }
+
+    .headerSplit {
+        display: none;
+    }
+    
+    .showcase {
+
+        .rocket {
+            margin: 0 12%;
+        }
+
+        .track {
+            transform: rotate(180deg);
+        }
+
+        .trackRightToLeft, .trackLeftToRight, .trackEnd {
+            display: none;
+        }
+
+        .trackArrow {
+            margin-top: 5%;
+            animation: bounce 2s infinite linear; 
+        }
+
+        button {
+            width: 45%;
+            padding: 5% 0;
+            font-size: 1.8rem;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            &__content {
+                width: 100%;
+                margin-right: 0%;
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                img {
+                    width: 12%;
+                }
+            }
+            
+             &__img {
+                width: 100%;
+                position: relative;
+                margin-top: 10%;
+            
+                .loop {
+                    width: 70%;
+                    margin: 0% auto 5% auto;
+                }
+
+                .project {
+                    left: 20%;
+
+                    &--reverse {
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+
+    .myProcess__item {
+        flex-direction: column;
+        
+        &__title {
+            min-width: 50%;
+            margin: 10% 0;
+        }
+
+        img {
+            padding: 0;
+            min-width: 50%;
+            order: -1;
+        }
+
+        p {
+            min-width: 100%;
+        }
+
+        &--top {
+            margin-top: 0%;
+        }
+
+    }
+
+    .fact__container {
+
+        .fact__item {
+            width: 50%;
+    
+            &--focus {
+                width: 100%;
+                margin: 0;
+            }
+
+            &--left{
+                margin: 0;
+            }
+
+            &--right {
+                margin: 0;
+            }
+        }
+    }  
+}
+
+@media (max-width: 600px) {
+    .headerContent{
+      font-size: 3.5rem;
+    }
+
+    .headerNav {
+
+        &__menu {
+            justify-content: flex-start;
+
+            &__item {
+                display: none;
+            }
+        }
+    }
+
+    .hamburgerNav {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .close {
+        right: 14%;
+    }
+
+    .social {
+        flex-wrap: wrap;
+
+        &__links {
+            min-width: 25%;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .headerContent{
+      font-size: 2.6rem;
+    }
+
+    .showcase__item__img  {
+
+        .project {
+            left: 19%;
+            top: 5%;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 17%;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 17%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 13%;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 13%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 11%;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .showcase__item__img  {
+
+        .project {
+            left: 7%;
+        }
+    }
+}

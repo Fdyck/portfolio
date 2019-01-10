@@ -18,6 +18,7 @@ html {
     font-family: $headingFont;
     color: $fontColor;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -64,7 +65,6 @@ section {
 }
 
 p {
-    // LIGHTEN THIS MORE? FIND ANOTHER FONT THAT CAN?
     font-family: $pFont;
     font-size: 1.4rem;
     font-weight: 300;
